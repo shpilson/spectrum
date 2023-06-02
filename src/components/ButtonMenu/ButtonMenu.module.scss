@@ -26,18 +26,11 @@
 }
 
 .wrapper {
-  margin: rem(30) 0;
-  justify-content: space-between;
+  padding: rem(30) 0;
+  justify-content: center;
   align-items: center;
   // height: 100%;
   flex: 1 1 auto;
-  gap: rem(40);
-
-  // костыль потому что на андроиде каким-то чудесным образом обрезается экран и не появляется скролл для меню
-  @media (max-width: 600px) {
-    justify-content: center;
-    flex: 0 0 auto;
-  }
 }
 
 .menuBurger {
@@ -49,7 +42,7 @@
   right: 0;
   z-index: -1;
   background-color: #ffffff;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   // opacity: 0;
   transition: 0.3s;
@@ -62,14 +55,6 @@
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
-  display: flex;
-}
-
-.container {
-  flex: 1 1 auto;
-  min-height: 100vh;
-  min-height: calc(var(--vh, 1vh) * 100); // делаем 100vh на телефоне + js
-  overflow-y: scroll;
 }
 
 .animated {
@@ -94,6 +79,7 @@
 }
 
 .wrapperContent {
+  padding: rem(40) 0;
   gap: rem(30);
   flex: 1 1 auto;
   justify-content: center;

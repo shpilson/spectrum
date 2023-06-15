@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import s from "./ExperienceSection.module.scss";
 import cn from "classnames";
-import img10 from "./assets/images/photo/10.svg";
-import img350 from "./assets/images/photo/350.svg";
 import fondOne from "./assets/images/photo/fondOne.svg";
 import fondTwo from "./assets/images/photo/fondTwo.svg";
 import fondThree from "./assets/images/photo/fondThree.svg";
@@ -10,7 +8,6 @@ import fondFour from "./assets/images/photo/fondFour.svg";
 import titleIcon from "./assets/images/photo/titleIcon.svg";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";

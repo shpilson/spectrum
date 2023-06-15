@@ -2,11 +2,9 @@ import React, { useState, useRef } from "react";
 import s from "./FaqSection.module.scss";
 import cn from "classnames";
 import faqData from "../../assests/data/faqData.json";
-import { FaqBlock } from "../FaqBlock/FaqBlock";
 import titleIcon from "./assets/images/photo/titleIcon.svg";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";
@@ -144,7 +142,8 @@ const FaqSection = () => {
                   </motion.div>
                 );
               }
-            })}
+              return null;
+            }).filter(d => d)}
           </div>
         </div>
       </div>

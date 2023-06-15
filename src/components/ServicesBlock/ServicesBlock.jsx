@@ -4,7 +4,6 @@ import cn from "classnames";
 import letter from "./assets/images/photo/letter.svg";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";

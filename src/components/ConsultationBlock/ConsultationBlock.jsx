@@ -2,10 +2,8 @@ import React, { useRef } from "react";
 import s from "./ConsultationBlock.module.scss";
 import cn from "classnames";
 import letter from "./assets/images/photo/letter.svg";
-import triangleBackground from "./assets/images/photo/triangleBackground.svg";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";
@@ -22,15 +20,16 @@ const titleAnimation = {
   }),
 };
 
-const blockAnimation = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: (custom) => ({
-    opacity: 1,
-    transition: { duration: 0.5, delay: custom * 0.3 },
-  }),
-};
+// TODO: выпилить, если не будет использоваться
+// const blockAnimation = {
+//   hidden: {
+//     opacity: 0,
+//   },
+//   visible: (custom) => ({
+//     opacity: 1,
+//     transition: { duration: 0.5, delay: custom * 0.3 },
+//   }),
+// };
 
 const ConsultationBlock = () => {
   let ref = useRef(null);

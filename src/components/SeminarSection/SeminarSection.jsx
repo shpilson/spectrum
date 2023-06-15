@@ -5,10 +5,8 @@ import sliderData from "../../assests/data/sliderData.json";
 import { Slide } from "../Slide/Slide";
 import Slider from "react-slick";
 import titleIcon from "./assets/images/photo/titleIcon.svg";
-import star from "./assets/images/photo/star.svg";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";
@@ -72,7 +70,8 @@ const SeminarSection = () => {
             if (el.isActive) {
               return <Slide key={el.id} {...el} />;
             }
-          })}
+            return null;
+          }).filter(d => d)}
         </Slider>
       </div>
     </motion.div>

@@ -6,7 +6,6 @@ import { ServicesBlock } from "../ServicesBlock/ServicesBlock";
 import titleIcon from "./assets/images/photo/titleIcon.svg";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";

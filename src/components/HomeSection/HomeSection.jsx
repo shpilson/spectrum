@@ -8,7 +8,6 @@ import triangleFour from "./assets/images/photo/triangleFour.svg";
 import { Link } from "react-scroll";
 import {
   motion,
-  useViewportScroll,
   useTransform,
   useScroll,
 } from "framer-motion";
